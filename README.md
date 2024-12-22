@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+** Gerenciamento de Tarefas**
+Este é um aplicativo web simples para gerenciamento de tarefas, onde você pode criar, ler, atualizar e excluir (CRUD) tarefas. A aplicação foi desenvolvida utilizando React com TypeScript, estilizada com Tailwind CSS, e utiliza o JSON-server para simular a API backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📌Tecnologias Utilizadas
 
-Currently, two official plugins are available:
+➡️ React: Biblioteca JavaScript para construir a interface de usuário.
+➡️ TypeScript: Superset do JavaScript que adiciona tipagem estática ao código.
+➡️ Tailwind CSS: Framework CSS utilitário para estilização rápida e responsiva.
+➡️ JSON-server: Ferramenta para simular uma API RESTful simples durante o desenvolvimento.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📌Funcionalidades
 
-## Expanding the ESLint configuration
+➡️ Criar Tarefa: Adicione novas tarefas com título e descrição.
+➡️ Visualizar Tarefas: Liste todas as tarefas já criadas.
+➡️ Editar Tarefa: Modifique as informações de tarefas existentes.
+➡️ Excluir Tarefa: Remova tarefas quando não forem mais necessárias.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+🎯 Como Rodar o Projeto
 
-- Configure the top-level `parserOptions` property like this:
+⚠️Pré-requisitos
+Certifique-se de ter o Node.js e o npm instalados em sua máquina. Você pode verificar se tem o Node.js instalado com o comando: **node -v**
+E o npm com: **npm -v**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🚶🏽‍♀️‍➡️🏃🏽‍♀️‍➡️Passos para Execução
+Clone este repositório:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+**npm install json-server**
+Inicie o servidor do JSON-server para simular a API:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+**npm run dev**
+Em um novo terminal, inicie a aplicação React:
+
+
+**json-server --watch db.json**
+Acesse a aplicação em http://localhost:3000.
+
+
+✨ Sinta-se à vontade para fazer forks e pull requests. Qualquer melhoria ou sugestão é bem-vinda!

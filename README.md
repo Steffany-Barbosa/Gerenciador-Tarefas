@@ -47,5 +47,7 @@ Em um novo terminal, inicie a aplicação React:
 Acesse a aplicação em http://localhost:3000.
 
 
+👩🏽‍💻 Deploy: https://gerenciador-tarefas-61qsag1ip-steffany-barbosas-projects.vercel.app/
+
 
 ✨ Sinta-se à vontade para fazer forks e pull requests. Qualquer melhoria ou sugestão é bem-vinda!
